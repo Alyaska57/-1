@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <style type="text/css">
+        A{
+            text-decoration: none;
+            color: rgb(14, 5, 84);
+        } 
+        A:hover{ 
+            text-decoration: underline;
+            color: rgb(8, 45, 52);
+        } 
+        A.active{
+            color: rgb(8, 45, 52);
+        }
+    </style>
+</head>
+
+<body bgcolor="b4c7cc">
+    <ul>
+        <li><a href="Index.html">Главная</a></li>
+        <li><a href="Form.html" class="active">Заполнить форму</a></li>
+        <li><a href="Passport.html">Паспорт</a></li>
+        <li><a href="Problem.html">Задача</a></li>
+        <li><a href="Screen.html">Скриншот</a></li>
+        <li><a href="https://instagram.com/ak_createe?cplk=MWs4YTJya21pMm14NA%3D%3D" target="_blank"><img src="Images/Inst.jpg" width="30" height="30"></a></li>
+    </ul>
+    <h1>Оформить заказ</h1>
+    <form action="https://www.google.com" id="UserEnter2" name="UserEnter2" target="_blank">
+        <p>Введите ваше ФИО 
+            <input type="text" name="fio" required></p>
+        <p>Какое растение вы хотите заказать: <br>
+                <input type="radio" name="plant" value="rose" checked> Розы<br>
+                <input type="radio" name="plant" value="hydrangea"> Гортензии<br>
+                <input type="radio" name="plant" value="clematis"> Клематисы<br>
+                <input type="radio" name="plant" value="petunia"> Петунии<br>
+            </p>
+        <p>Особые пожелания:<br>
+                <textarea name="comment" cols="40" rows="3"></textarea> </p>
+        <p>Желаемая дата доставки: 
+            <input type="date" name="deliverydate" value="2026-10-21"></p>
+        <p>Придумайте пароль для отслеживания заказа: 
+            <input type="password" name="password" size="15" required></p>
+        <p>Нужны ли вам услуги ландшафтного дизайна? 
+            <input type="checkbox" name="landscape" value="yes"></p>
+        <p>Сколько саженцев вы хотите купить? 
+            <input type="number" name="count" min="1" max="100" value="5"></p>
+        <p> Ваш номер телефона: 
+            <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" required></p>
+        <p> Ваша электронная почта: 
+            <input type="email" name="email" placeholder="example@mail.ru" required></p>
+        <p>Оцените качество работы сайта: 
+            <input name="ocenk" type="range" min="1" max="5" step="1" value="3"> <span id="Ocenka"></span></p>
+        <input type="hidden" name="site_name" value="FloraPitomnik">
+        <p>
+            <input type="submit" value="Оформить заказ">
+            <input type="reset" value="Очистить">
+        </p>
+    </form>
+</body>
+</html>

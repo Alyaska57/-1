@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача</title>
+    <style type="text/css">
+        A{
+            text-decoration: none;
+            color: rgb(14, 5, 84);
+        } 
+        A:hover{ 
+            text-decoration: underline;
+            color: rgb(8, 45, 52);
+        } 
+        A.active{
+            color: rgb(8, 45, 52);
+        }
+    </style>
+</head>
+
+<body bgcolor="b4c7cc">
+    <ul>
+        <li><a href="Index.html">Главная</a></li>
+        <li><a href="Form.html">Заполнить форму</a></li>
+        <li><a href="Passport.html">Паспорт</a></li>
+        <li><a href="Problem.html" class="active">Задача</a></li>
+        <li><a href="Screen.html">Скриншот</a></li>
+        <li><a href="https://instagram.com/ak_createe?cplk=MWs4YTJya21pMm14NA%3D%3D" target="_blank"><img src="Images/Inst.jpg" width="30" height="30"></a></li>
+    </ul>
+    <h1> Алгоритмическая задача</h1>
+        <ul>
+            <li> Формулировка задачи 
+                <br> <textarea cols="60">Определить величину Z=1/(XY) при произвольных X и Y.</textarea>
+            </li>
+            <form action="https://www.google.com" id="UserEnter" name="UserEnter" target="_blank">
+                <li>X: <input id="X" name="X" type="number" value="5"></li>
+                <li>Y: <input id="Y" name="Y" type="number" value="2"></li>
+                <li>Z: <input id="Z" name="Z" type="number" step="0.000000000000000001" value="0.1"></li>
+                <li> <button id="calculate" type="button">Вычислить</button> </li>
+                <li> <button id="send">Отправить</button></li>
+            </form>
+        </ul>
+</body>
+<script src="Scripts/Problem.js"></script>
+</html>

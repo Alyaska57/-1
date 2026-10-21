@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Паспорт</title>
+    <style type="text/css">
+        A{
+            text-decoration: none;
+            color: rgb(9, 3, 57);
+        } 
+        A:hover{ 
+            text-decoration: underline;
+            color: rgb(8, 45, 52);
+        } 
+        A.active{
+            color: rgb(8, 45, 52);
+        }
+        body{
+            background-image: url(Images/Passport1.png);
+            background-size: 500px;
+            background-position: 20px 200px;
+            background-repeat: no-repeat;
+        }
+        .given{
+            margin-left: 115px;
+            margin-top: 115px;
+        }
+        .date{
+            margin-left: 110px;
+            margin-top: 60px;
+        }
+        .lastname{
+            margin-left: 240px;
+            margin-top: 220px;
+        }
+        .name{
+            margin-left: 230px;
+            margin-top: 35px;
+        }
+        .secondname{
+            margin-left: 230px;
+            margin-top: 8px;
+        }
+        .gender{
+            margin-left: 220px;
+            margin-top: 7px;
+        }
+        .place{
+            margin-left: 240px;
+            margin-top: -85px;
+        }
+        .image{
+            margin-left: 38px;
+            margin-top: -90px;
+        }
+        .button{
+            margin-left: 220px;
+            margin-top: 90px;
+        }
+    </style>
+</head>
+
+<body bgcolor="b4c7cc">
+    <ul>
+        <li><a href="Index.html">Главная</a></li>
+        <li><a href="Form.html">Заполнить форму</a></li>
+        <li><a href="Passport.html" class="active">Паспорт</a></li>
+        <li><a href="Problem.html">Задача</a></li>
+        <li><a href="Screen.html">Скриншот</a></li>
+        <li><a href="https://instagram.com/ak_createe?cplk=MWs4YTJya21pMm14NA%3D%3D" target="_blank"><img src="Images/Inst.jpg" width="30" height="30"></a></li>
+    </ul>
+    <div class="given">ГУ МВД РОССИИ ПО Г. МОСКВЕ</div>
+    <div class="date">29.03.2021 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 676-767</div>
+    <div class="lastname">Кирсанова</div>
+    <div class="name">Мария</div>
+    <div class="secondname">Сергеевна</div>
+    <div class="gender">Ж &emsp;&emsp;&emsp;&emsp;&emsp; 21.02.2007</div>
+    <div class="image"> <img src="Images/Me.jpg" height="180"></div>
+    <div class="place">Москва</div>
+    <button class="button" id="flag">Заменить</button>
+</body>
+<script src="Scripts/Passport.js"></script>
+</html>
